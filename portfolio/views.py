@@ -26,6 +26,8 @@ def resume(request):
 
 
 
+
+
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
