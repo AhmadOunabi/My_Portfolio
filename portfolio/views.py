@@ -16,6 +16,7 @@ def projects(request):
 
 
 
+
 def resume(request):
     educations=Education.objects.all()
     experiences=Experience.objects.all()
@@ -23,6 +24,7 @@ def resume(request):
     skills=Skill.objects.all()
     context={'educations':educations, 'languages':languages, 'skills':skills,'experiences':experiences}
     return render(request, 'resume.html',context)
+
 
 
 
