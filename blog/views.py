@@ -4,5 +4,6 @@ from .models import Post
 
 
 def posts(request):
-    pass
-    return render(request, 'posts.html',)
+    posts=Post.objects.all()
+    context={'posts': posts}
+    return render(request, 'posts.html', context)

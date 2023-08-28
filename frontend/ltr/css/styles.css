@@ -11732,3 +11732,9 @@ html {
     left: -2vw;
   }
 }
+
+
+img.img-fluid{
+  width: 150px;
+  height: 150px;
+}
